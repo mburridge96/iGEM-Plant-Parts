@@ -1,0 +1,30 @@
+# Distribution Summary
+
+- 22 samples planned for distribution
+
+### Parts:
+
+- Plant_CDSs_Plant_CDSs_ins_Bar
+- Plant_CDSs_Plant_CDSs_ins_GFP
+- Plant_CDSs_Plant_CDSs_ins_NPTII
+- Plant_CDSs_Plant_CDSs_ins_RUBY
+- Plant_CDSs_Plant_CDSs_ins_hph
+- Plant_CDSs_Plant_CDSs_ins_mCherry
+- Plant_fiveUTRs_Plant_fiveUTRs_ins_AtRbcS2B_5UTR
+- Plant_fiveUTRs_Plant_fiveUTRs_ins_CMV1_UTR
+- Plant_fiveUTRs_Plant_fiveUTRs_ins_TMV
+- Plant_fiveUTRs_Plant_fiveUTRs_ins_TMV_SV40
+- Plant_fiveUTRs_Plant_fiveUTRs_ins_TMV_chloroplast_transit
+- Plant_promoters_Plant_promoters_ins_AtRbcS2B_proUTR
+- Plant_promoters_Plant_promoters_ins_BS3_proUTR
+- Plant_promoters_Plant_promoters_ins_CaMV35S
+- Plant_promoters_Plant_promoters_ins_LHB1B2_promoter
+- Plant_promoters_Plant_promoters_ins_MAS_pro
+- Plant_promoters_Plant_promoters_ins_PDF1_2_pro
+- Plant_promoters_short_Plant_promoters_short_ins_AtU6
+- Plant_promoters_short_Plant_promoters_short_ins_Pnos
+- Plant_threeUTRs
+- Plant_threeUTRs_short_Plant_threeUTRs_short_ins_CaMV35S_3UTR
+- Plant_threeUTRs_short_Plant_threeUTRs_short_ins_Tnos
+
+_Note: automatically generated from distribution SBOL file; do not edit_
