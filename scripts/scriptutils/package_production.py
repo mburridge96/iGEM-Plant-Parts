@@ -105,7 +105,6 @@ def expand_build_plan(package: str) -> sbol3.Document:
     :return: Updated document
     """
     path = os.path.join(package, EXPORT_DIRECTORY, SBOL_PACKAGE_NAME)
-    print(path)
     doc = sbol3.Document()
     doc.read(path)
 
@@ -128,9 +127,19 @@ def expand_build_plan(package: str) -> sbol3.Document:
     # expand any libraries
     # TODO: change namespace handling after resolution of https://github.com/SynBioDex/pySBOL3/issues/288
     sbol3.set_namespace(package_stem(package))
+    
     if expansion_targets:
+        print("Expanding targets")
         # TODO: handle (and test) layered expansions of build products
-        derivative_collections = expand_derivations(expansion_targets)
+        try:
+            derivative_collections = expand_derivations(expansion_targets)
+        except:
+            # Seems to error when there is already an entity present
+            # Works when you are starting with a fresh package
+            # TODO: full testing as previous 
+            print("WARNING! SBOL utilities issue with overwriting entities? Raising error")
+            raise
+
         print(f'Expanded {len(derivative_collections)} libraries containing a total '
               f'of {sum(len(c.members) for c in derivative_collections)} parts')
         library_parts = list(itertools.chain(*(c.members for c in derivative_collections)))
